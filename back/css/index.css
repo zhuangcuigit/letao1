@@ -1,0 +1,90 @@
+
+/* 左侧导航栏 */
+.aside {
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: all 1s linear;
+}
+/* now,隐藏侧边栏 */
+.aside.now {
+  left: -180px;
+}
+.aside a {
+  color: #fff;
+}
+
+.header {
+  height: 50px;
+  color: #fff;
+  
+}
+.aside .header {
+  background-color: #367fa9;;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+}
+.aside .user {
+  text-align: center;
+
+}
+.aside .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+.aside .user p {
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.aside .nav i {
+  margin-right: 5px;
+}
+.aside .nav a {
+  display: block;
+  line-height: 25px;
+  font-size: 15px;
+  background-color: #222d32!important;
+  border-left: 2px solid #222d32;
+}
+.aside .nav a.now {
+ 
+  border-left: 2px solid #069;
+  background-color: #1d1f21!important;
+  
+}
+
+.aside .nav .second {
+  display: none;
+
+}
+
+
+
+
+/* 右侧内容区 */
+.content {
+  height: 100%;
+  padding-left: 180px;
+  background-color: #fff;
+  transition: all 1s linear;
+}
+/* now,padding减为0 */
+.content.now {
+  padding-left: 0;
+}
+.content .header {
+  background-color: #3c8dbc;
+  padding: 15px;
+}
+.breadcrumb {
+  margin-top: 10px;
+}

@@ -5,8 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  
 </head>
 <body>
-  登录
+  <div class="aside">
+    <div class="header bg-primary">
+      <a href="javascript:;">前端22期</a>
+    </div>
+    <div class="user">
+      <img src="image/default.jpg" alt="">
+      <p>超级管理员</p>
+    </div>
+    <ul class="nav">
+      <li>
+        <a href="javascript:;">
+          <i class="glyphicon glyphicon-user"></i><span>用户管理</span>
+        </a>
+      </li>
+      <li>
+          <a class='first' href="javascript:;">
+            <i class="glyphicon glyphicon-list"></i><span>分类管理</span>
+          </a>
+          <div class="second">
+            <a href="first.html">一级分类</a>
+            <a href="second.html">二级分类</a>
+          </div>
+      </li>
+      <li>
+          <a href="javascript:;">
+            <i class="glyphicon glyphicon-tags"></i><span>商品管理</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="header">
+      <i class="btn-hidden glyphicon glyphicon-align-justify pull-left"></i>
+      <i class="btn-drop glyphicon glyphicon-log-out pull-right"></i>
+    </div>
+    <div class="main container-fluid">
+      <!--面包屑导航-->
+    <ol class="breadcrumb">
+        <li><a href="#">管理系统</a></li>
+        <li class="active">首页</li>
+      </ol>
+    </div>
+  </div>
+  <!-- 退出的模态框 -->
+  <div class="modal fade" tabindex="-1" id="logoutModal">
+      <div class="panel panel-default col-xs-4 col-xs-offset-4 padding-0">
+          <div class="panel-heading">温馨提示</div>
+          <div class="panel-body">
+              <form class="form-horizontal">
+                  <div class="form-group text-danger">
+                    <p>
+                      <i class="glyphicon glyphicon-info-sign"></i>
+                      您确定要退出后台管理系统吗？
+                    </p>
+                  </div>
+                  
+                  <div class="form-group">
+                    <div class="col-sm-offset-6 col-sm-6">
+                      <button type="button" class="btn btn-default btn-reset">取消</button>
+                      <button type="submit" class="btn btn-primary btn-confirm">确定</button>
+                    </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+  </div>
+  
+
+    
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/nprogress/nprogress.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>
